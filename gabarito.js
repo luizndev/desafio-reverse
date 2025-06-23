@@ -1,3 +1,7 @@
+function handleInputChange(e){
+  return reverseString(e.target.value);
+}
+
 
 function reverseString(valor){
     let sign;
