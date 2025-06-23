@@ -2,14 +2,33 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>file.d documentation</title>
+  <title>Inverter String</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="A blazing fast tool for building data pipelines: read, process, and output events.">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
+<style>
+  body{
+    overflow: hidden;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #121212;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }  
+</style>
 <body>
-  <input type="text"  id="string" onchange="(e) => reverseString(e.target.value)" />
-  <div id="app"></div>
+  <h1 style="color: white; font-family: Arial, Helvetica, sans-serif;">Interver String</h1>
+  <p style="color: white; font-family: Arial, Helvetica, sans-serif;">Quando finalizar de digitar clique fora do input</p>
+  <input type="text" id="string" style="background: transparent; color: white; border: 1px solid white; padding: 10px; border-radius: 5px;" onchange="handleInputChange(event)" placeholder="Digite um valor" />
+  <div style="display: flex; gap: 4px;">
+    <span  id="output" style="color: white; font-family: Arial, Helvetica, sans-serif;">Retorno:</span>
+    <div style="color: white; font-family: Arial, Helvetica, sans-serif;" id="app"></div>
+  </div>
+
   <script src="gabarito.js"></script>
 </body>
 </html>
